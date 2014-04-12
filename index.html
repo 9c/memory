@@ -1,11 +1,51 @@
 <html>
-  <script src="http//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script>
+
+  $(document).ready(function(){
+
+
+
+   $('td').on('click', function(){
+
+
+
+    pre = this;
+    if ($(pre).text() === $(this).text())
+      {
+        console.log('match')
+      }
+
+
+
+  });
+
+
+
+ });
+
   </script>
+
+  <style>
+    table {
+      height: 500px;
+      width: 500px;
+      border: 2px solid black;
+    }
+    </style>
   <body>
     <table>
-      <tr><td></td><td></td></tr>
-      <tr><td></td><td></td></tr>
+     <tr>
+  <td>Jill</td>
+  <td>Smith</td>
+
+</tr>
+<tr>
+  <td>Smith</td>
+  <td>Jill</td>
+
+</tr>
+
     </table>
   </body>
 </html>
